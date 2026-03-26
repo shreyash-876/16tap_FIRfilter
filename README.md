@@ -17,9 +17,7 @@ This project demonstrates a complete **MATLAB-to-RTL design flow** for a **16-ta
 ## ⚙️ FIR Filter Theory
 The FIR filter is defined as:
 
-\[
-y[n] = \sum_{k=0}^{N} b_k x[n-k]
-\]
+`y[n] = Σ b[k] · x[n-k]`
 
 where:
 - \( b_k \) are filter coefficients  
@@ -95,32 +93,33 @@ where:
 
 ## 📂 Project Structure
 
+```text
 FIR_Filter_Project/
-│
-├── README.md
-│
-├── matlab/
-│   └── final_script.m
-│
-├── rtl/
-│   └── fir_filter.v
-│
-├── testbench/
-│   └── tb_fir.v
-│
-├── results/
-│   ├── freq_response.png
-│   ├── time_response.png
-│   ├── tap_comparison.png
-│   ├── output_comparison.png
-│   ├── coeff_comparison.png
-│   ├── error_plot.png
-│   ├── vivado_waveform.png
-│   └── rtl_datapath.png
-│
-├── report/
-    └── FIR_16tap.pdf
 
+│── README.md
+
+│── matlab/
+│     └── final_script.m
+
+│── rtl/
+│     └── fir_filter.v
+
+│── testbench/
+│     └── tb_fir.v
+
+│── results/
+│     ├── freq_response.png
+│     ├── time_response.png
+│     ├── tap_comparison.png
+│     ├── output_comparison.png
+│     ├── coeff_comparison.png
+│     ├── error_plot.png
+│     ├── vivado_waveform.png
+│     └── rtl_datapath.png
+
+│── report/
+      └── FIR_16tap.pdf
+```
 ---
 
 ## 🚀 How to Run
