@@ -1,11 +1,11 @@
 # MATLAB-to-VLSI Design of a Fixed-Point FIR Filter
 
-## 📌 Overview
+##  Overview
 This project demonstrates a complete **MATLAB-to-RTL design flow** for a **16-tap low-pass FIR filter**. The filter is designed and analyzed in MATLAB, converted to fixed-point representation, and implemented in Verilog for hardware realization. The RTL design is verified using Vivado simulation.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Design an FIR filter in MATLAB
 - Analyze frequency and time-domain characteristics
 - Convert floating-point coefficients to fixed-point (Q1.15)
@@ -14,7 +14,7 @@ This project demonstrates a complete **MATLAB-to-RTL design flow** for a **16-ta
 
 ---
 
-## ⚙️ FIR Filter Theory
+##  FIR Filter Theory
 The FIR filter is defined as:
 
 `y[n] = Σ b[k] · x[n-k]`
@@ -25,7 +25,7 @@ where:
 
 ---
 
-## 🧠 Design Flow
+##  Design Flow
 
 ### 1. MATLAB Design
 - Designed a **16-tap low-pass FIR filter** using `fir1`
@@ -55,7 +55,7 @@ where:
 
 ---
 
-## 🏗️ Hardware Architecture
+##  Hardware Architecture
 
 ### FIR Datapath
 - Shift-register-based delay line
@@ -69,7 +69,7 @@ where:
 
 ---
 
-## 📊 Results
+##  Results
 
 ### MATLAB Results
 - Accurate frequency response
@@ -83,7 +83,7 @@ where:
 
 ---
 
-## ⚠️ Notes on MATLAB vs RTL
+##  Notes on MATLAB vs RTL
 
 - MATLAB uses floating-point → smooth output  
 - RTL uses fixed-point → discrete output  
@@ -91,7 +91,7 @@ where:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 FIR_Filter_Project/
@@ -122,7 +122,7 @@ FIR_Filter_Project/
 ```
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### MATLAB
 1. Open MATLAB
